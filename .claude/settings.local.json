@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\Saif\\\\Desktop\\\\ramdani\\\\location_voiture\")",
+      "Bash(php --version)",
+      "Bash(composer --version)",
+      "Bash(composer.phar --version)",
+      "Read(//usr/local/**)",
+      "Bash(where composer *)",
+      "Bash(composer.phar create-project *)",
+      "Bash(composer.phar require *)",
+      "Bash(php artisan *)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(netsh interface *)"
+    ]
+  }
+}
