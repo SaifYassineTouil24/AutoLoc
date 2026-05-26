@@ -72,9 +72,11 @@ export default function Login() {
           </p>
         </div>
 
-        <p className="text-center text-xs text-slate-500 mt-6">
-          Comptes de démonstration : admin@autoloc.dz / Admin@1234
-        </p>
+        <div className="mt-6 bg-slate-800/60 rounded-xl p-4 text-xs text-slate-400 space-y-1.5">
+          <p className="font-semibold text-slate-300 mb-2">Comptes de démonstration</p>
+          <p><span className="text-slate-300 font-medium">Admin :</span> admin@autoloc.ma / Admin@1234</p>
+          <p><span className="text-slate-300 font-medium">Employé :</span> youssef@autoloc.ma / Employe@1234</p>
+        </div>
       </div>
     </div>
   )
