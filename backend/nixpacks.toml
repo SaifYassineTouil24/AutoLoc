@@ -1,8 +1,5 @@
-[variables]
-NIXPACKS_PHP_VERSION = "8.4"
-
 [phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
+cmds = ["composer update --no-dev --optimize-autoloader"]
 
 [phases.build]
 cmds = ["php artisan config:cache", "php artisan route:cache", "php artisan view:cache"]
