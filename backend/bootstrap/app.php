@@ -20,7 +20,6 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->remove(\Illuminate\Http\Middleware\HandleCors::class);
-        $middleware->api(prepend: [\App\Http\Middleware\Cors::class]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->render(function (NotFoundHttpException $e, Request $request) {
