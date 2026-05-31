@@ -19,6 +19,8 @@ return Application::configure(basePath: dirname(__DIR__))
             'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
         ]);
 
+        $middleware->prepend(\Illuminate\Http\Middleware\HandleCors::class);
+
         $middleware->api(prepend: [
             \Illuminate\Http\Middleware\HandleCors::class,
         ]);
